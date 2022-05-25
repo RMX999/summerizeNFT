@@ -1,5 +1,5 @@
 <h1 align="center">
-  DEMO v0.3 WebSite : https://summurize-pfuntcdbx-rmx999.vercel.app/
+  DEMO v0.3 WebSite : https://summerize-nft.vercel.app/
 </h1>
 
 <!--  -->

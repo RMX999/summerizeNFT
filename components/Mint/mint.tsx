@@ -1,15 +1,10 @@
 import { FunctionComponent, useState} from "react";
-import { Modal, Input, Row, Checkbox, Text, Button } from "@nextui-org/react";
+import { useAddress, useMetamask, useNFTDrop } from "@thirdweb-dev/react";
+import CLaimNFT from './TestMint';
 
-export default function () {
+  function Mint () {
   const [count, setCount] = useState(0);
-  const [visible, setVisible] = useState(false);
-  const handler = () => setVisible(true);
-  const closeHandler = () => {
-    setVisible(false);
-    console.log("closed");
-  };
-
+ 
   const incrementCount = () => {
     setCount(count + 1);
   };
@@ -77,39 +72,9 @@ export default function () {
                 <img className="inline pb-[2px]" alt="" src="mint/usdc.svg" />
                 <p className="inline font-Poppins text-[18px] font-[500] text-[#25282B]"> 10.50 USDC</p>
               </div>
-              <button className="text-white bg-gradient-to-r from-[#EB3349] to-[#F45C43] px-[83px] py-[15px] rounded-lg text-xl font-Montserrat font-[600] flex items-center" onClick={handler}>
-                Mint
+              <button className="text-white bg-gradient-to-r from-[#EB3349] to-[#F45C43] px-[83px] py-[15px] rounded-lg text-xl font-Montserrat font-[600] flex items-center" >
+              <CLaimNFT />
               </button>
-              <Modal
-                  closeButton
-                  blur
-                  aria-labelledby="modal-title"
-                  open={visible}
-                  onClose={closeHandler}
-                  width="648px"
-                >
-                  <Modal.Header>
-                    <Text id="modal-title" size={18}>
-                    Medal of{" "}
-                      <Text b size={18}>
-                      Alcoriz
-                      </Text>
-                    </Text>
-                  </Modal.Header>
-                  <Modal.Body
-                  >
-                    <iframe
-                      src="https://gateway.ipfscdn.io/ipfs/QmXPGx4TkhvwLZGp2BDBab3VRw7y7JkMwsXkLeDgeT1M6N/nft-drop.html?contract=0x355ab88dcd28908B75B502E56B3FD6C0152783f5&chainId=80001"
-                      width="600px"
-                      height="600px"
-                    ></iframe>
-                  </Modal.Body>
-                  <Modal.Footer>
-                    <Button auto flat color="error" onClick={closeHandler}>
-                      Close
-                    </Button>
-                  </Modal.Footer>
-                </Modal>
             </div>
           </div>
         </div>
@@ -117,3 +82,37 @@ export default function () {
     </div>
   );
 }
+
+export default Mint;
+
+// onClick={handler}
+{/* <Modal
+closeButton
+blur
+aria-labelledby="modal-title"
+open={visible}
+onClose={closeHandler}
+width="648px"
+>
+<Modal.Header>
+  <Text id="modal-title" size={18}>
+  Medal of{" "}
+    <Text b size={18}>
+    Alcoriz
+    </Text>
+  </Text>
+</Modal.Header>
+<Modal.Body
+>
+  <iframe
+    src="https://gateway.ipfscdn.io/ipfs/QmXPGx4TkhvwLZGp2BDBab3VRw7y7JkMwsXkLeDgeT1M6N/nft-drop.html?contract=0x355ab88dcd28908B75B502E56B3FD6C0152783f5&chainId=80001"
+    width="600px"
+    height="600px"
+  ></iframe>
+</Modal.Body>
+<Modal.Footer>
+  <Button auto flat color="error" onClick={closeHandler}>
+    Close
+  </Button>
+</Modal.Footer>
+</Modal> */}

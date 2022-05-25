@@ -1,14 +1,16 @@
-import "../styles/globals.css";
 import type { AppProps } from "next/app";
-// import { ThirdwebProvider, ChainId } from "@thirdweb-dev/react";
+import { ChainId, ThirdwebProvider } from "@thirdweb-dev/react";
+import "../styles/globals.css";
 
-export default function MyApp({ Component, pageProps }: AppProps) {
+// This is the chainId your dApp will work on.
+const activeChainId = ChainId.Rinkeby;
 
-  // const desiredChainId = 80001;
-
+function MyApp({ Component, pageProps }: AppProps) {
   return (
-    // <ThirdwebProvider desiredChainId={desiredChainId}>
+    <ThirdwebProvider desiredChainId={activeChainId}>
       <Component {...pageProps} />
-      // {/* </ThirdwebProvider> */}
+    </ThirdwebProvider>
   );
 }
+
+export default MyApp;
