@@ -46,7 +46,9 @@ const Main = () => {
   );
 
   return (
-    <div className="text-white bg-gradient-to-r from-[#EB3349] to-[#F45C43] px-8 py-2 rounded-lg text-xl font-bold flex items-center">{provider ? loggedInView : unloggedInView}</div>
+    <div className="text-white bg-gradient-to-r from-[#EB3349] to-[#F45C43] px-8 py-2 rounded-lg text-xl font-bold flex items-center">
+      {provider ? loggedInView : unloggedInView}
+      </div>
   );
 };
 

@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 export default function HeroSection() {
   return (
-    <div className="items-center relative mb-60 flex justify-around  flex-wrap px-5">
+    <div className="z-0 items-center relative mb-60 flex justify-around  flex-wrap px-5">
       <div className="max-w-2xl relative">
         <h1 className=" text-4xl md:text-4xl font-Poppins font-bold text-left">
           Marketplace to Create, Buy<br></br>& Sell NFTs{" "}
@@ -20,17 +20,15 @@ export default function HeroSection() {
           </button>
         </div>
       </div>
-      <>
-        <div className="flex flex-col  bg-white rounded-xl  p-4 relative">
-          <div className="relative">
-            <img src="./img/nft4.png" alt="nft-gif" className="rounded-xl" />
+      
+        <div className="z-0 flex flex-col  bg-white rounded-xl p-4 ">
+          <div>
+            <img src="./img/nft4.png" alt="nft-gif" className="z-0  rounded-xl" />
           </div>
-          <div className="flex flex-col  rounded-b-xl py-4 ">
-            <div className="flex justify-between"></div>
-            <div className="flex  justify-between font-mono"></div>
+          <div className="flex flex-col  rounded-b-xl py-4">
           </div>
         </div>
-      </>
+      
     </div>
   );
 }
