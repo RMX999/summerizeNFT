@@ -3,7 +3,8 @@ import { useAddress, useMetamask, useNFTDrop } from "@thirdweb-dev/react";
 import CLaimNFT from './TestMint';
 
   function Mint () {
-  const [count, setCount] = useState(0);
+  const [count, setCount] = useState(1);
+ 
  
   const incrementCount = () => {
     setCount(count + 1);

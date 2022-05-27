@@ -22,7 +22,7 @@ export default function Home() {
   const [chain, setChain] = useState<CHAIN_CONFIG_TYPE>("mainnet");
 
   return (
-    <div className="bg-gradient-to-tr from-[#FFDC83] via-[#FFB9B9] to-[#00C5E8] ">
+    <div className="text-black bg-gradient-to-tr from-[#FFDC83] via-[#FFB9B9] to-[#00C5E8] ">
     <Web3AuthProvider chain={chain} web3AuthNetwork={web3AuthNetwork}>
       <NavComponent />
       </Web3AuthProvider>
