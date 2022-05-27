@@ -7,8 +7,8 @@ import { useWeb3Auth } from "../../services/web3auth";
 
 
 export default function NavComponent() {
-  const {provider} = useWeb3Auth();
-
+  const {provider, getAccounts, getUserInfo} = useWeb3Auth();
+  
   return (
       <div className="z-40 sticky w-11/12 mx-auto py-8">
         <div className="bg-white rounded-xl relative flex items-center justify-between h-16">
@@ -28,8 +28,11 @@ export default function NavComponent() {
 
             <a href="/" className="text-black-300 px-3 py-2 font-medium">
               Blog
+              
             </a>
             {provider ? <NavDropDown /> : <Auth />}
+
+            
           </div>
         </div>
       </div>
