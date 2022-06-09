@@ -3,6 +3,7 @@ import { WALLET_ADAPTERS } from "@web3auth/base";
 
 const Main = () => {
   const { provider, login, logout, getUserInfo, getAccounts, getBalance, signMessage, signTransaction, signAndSendTransaction, web3Auth, chain } = useWeb3Auth();
+  console.log(getAccounts);
 
   const loggedInView = (
     <>

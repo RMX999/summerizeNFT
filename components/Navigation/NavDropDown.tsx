@@ -9,8 +9,7 @@ export default function NavDropDown() {
         tabIndex={0}
         className="w-[125px] h-[32px] text-white bg-gradient-to-r from-[#EB3349] to-[#F45C43] rounded-md"
       >
-        <img src="../dropDownIcons/user.png" alt="title" className="inline" />
-        <p className="inline"> Hi Susan</p>
+        <p className="inline"> 0x05...AC2</p>
       </button>
       <ul
         tabIndex={0}
@@ -25,7 +24,7 @@ export default function NavDropDown() {
                 className="inline pl-2"
               />
               <p className="inline pl-2 font-Poppins font-[600] text-[16px]">
-                Profile
+                My Profile
               </p>
             </button>
           </Link>

@@ -21,9 +21,7 @@ export default function Loader() {
              {!open ? (
                <Grid.Container gap={1} justify="center">
                <Grid>
-                 <Button disabled auto bordered color="warning" css={{ px: "$13" }}>
-                   <Loading type="points-opacity" color="currentColor" size="sm" />
-                 </Button>
+                <img src="./QRLoading.gif"></img>
                  <h3>Connection to ipfs..</h3>
                </Grid>
                </Grid.Container>
@@ -32,7 +30,8 @@ export default function Loader() {
         <>
         <Grid.Container gap={1} justify="center">
                <Grid>
-         <img src="./frame.png" width="200px"></img>
+         <img src="./frame.png" width="200px"></img><br></br>
+         <p>To check QR status click {""}<a href="/submit">here</a></p>
                </Grid>
                </Grid.Container>
         </>

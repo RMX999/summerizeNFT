@@ -6,7 +6,6 @@ import { useState } from "react";
 //componets 
 import HeroSection from "../components/Hero/Hero";
 import NavComponent from "../components/Navigation/NavComponent";
-import Explore from "../components/Explore/Explore";
 import TopLiveMints from "../components/TopLiveMints/TopLiveMints"
 import Footer from "../components/Footer/Footer"
 import LearnAndEarn from "../components/LearnAndEarn/LearnAndEarn"
@@ -28,7 +27,6 @@ export default function Home() {
       </Web3AuthProvider>
       <HeroSection />
       <TopLiveMints />
-      <Explore />
       <LearnAndEarn />
       <Footer />
     </div>

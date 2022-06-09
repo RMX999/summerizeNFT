@@ -33,7 +33,7 @@ export default function Submit() {
           </div>
           <img className="pb-[25px]" alt="" src="mint/line.png" />
           <div className="">
-            <p className="font-Poppins text-[14px] font-[500] text-[#888888]">Available</p>
+            <p className="font-Poppins text-[14px] font-[500] text-[#888888]">Item</p>
             <p className="font-Poppins text-[25px] font-[600] text-[#2E2E2E]">ID: 1</p>
           </div>
         </div>
